@@ -1,0 +1,123 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0", 
+        "title": "My Concert Project CRUD",
+        "description": "My Concert Project Application API",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "swaggermit.herokuapp.com",
+    "basePath": "/",
+    "tags": [
+        {
+            "name": "Concerts",
+            "description": "API for concerts in the system"
+        }
+    ],
+    "schemes": [
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+
+    "paths": {
+        "/concerts": {
+            "get": {
+                "tags": ["Concerts"],
+                "summary": "Get all Concerts in system",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Concert"
+                        }
+                    }
+                }
+            }
+        },
+        "/concert": {
+            "post": {
+                "tags": ["Concerts"],
+                "description": "Create new concert in system",
+                "parameters": [
+                    {
+                        "name": "concert",
+                        "in": "body",
+                        "required": true,
+                        "description": "Concert that we want to create",
+                        "schema": {
+                            "$ref": "#/definitions/Concert"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "New concert is created",
+                        "schema": {
+                            "$ref": "#/definitions/Concert"
+                        }
+                    }
+                }
+            }
+        },
+        "/concert/{id}": {
+            "delete": {
+                "tags": ["Concerts"],
+                "description": "Delete an existing concert in system",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "ID of concert that we want to delete",
+                        "type": "integer"
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Concert is deleted",
+                        "schema": {
+                            "$ref": "#/definitions/Concert"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Concert": {
+            "required": ["id","artist","tour","venue","date"],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "uniqueItems": true
+                },
+                "artist": {
+                    "type": "string"
+                },
+                "tour": {
+                    "type": "string"
+                },
+                "venue": {
+                    "type": "string"
+                },
+                "date": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
