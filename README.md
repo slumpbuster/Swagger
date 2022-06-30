@@ -1,5 +1,5 @@
 # Swagger
-<img src="./Swagger.PNG" height="400px" width="400px"/> 
+<img src="./Swagger.PNG" height="400px" width="600px"/> 
  Test API and Documentation using Swagger
 
 ## Description 
