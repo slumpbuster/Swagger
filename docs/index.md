@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# Swagger
+<img src="./Swagger.PNG" height="400px" width="600px"/> 
+ Test API and Documentation using Swagger
 
-You can use the [editor on GitHub](https://github.com/slumpbuster/Swagger/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Description 
+This is an example of creating CRUD APIs and using Swagger for Documentation 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Purpose 
+This was done as an assignment in the MIT course - Full Stack Development with Mern
 
-### Markdown
+---------
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Technologies Used 
+- HTML
+- CSS
+- Javascript
 
-```markdown
-Syntax highlighted code block
+---------
 
-# Header 1
-## Header 2
-### Header 3
+## Installation 
+- Clone this repository to your local machine
+- Open a command line on your computer and run the command cd path-to-project-root (this should be the actual directory where the repository is located on your local machine)
+- Within the same command-line window, run npm start
+- Open your browser of choice and browse to http://localhost:3000/api-docs
 
-- Bulleted
-- List
+## How to Run 
+- When the page is loaded in your browser, you will notice various api documentation
 
-1. Numbered
-2. List
+---------
 
-**Bold** and _Italic_ and `Code` text
+## Files 
+  - **app.js** - APIs and HTTP Server
+  - **/swagger.json** - Swagger documentation file for APIs
 
-[Link](url) and ![Image](src)
-```
+---------
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Contributing 
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Jekyll Themes
+## License
+[The MIT License (MIT)](https://github.com/slumpbuster/Swagger/blob/main/LICENSE)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/slumpbuster/Swagger/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
